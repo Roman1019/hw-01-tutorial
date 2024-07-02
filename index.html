@@ -4,23 +4,327 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Simply Chocolate</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <a href="index.html"
-        >Simply Chocolate
-        <img src="./icon/chocolate.svg" alt="logo chocolate" />
-      </a>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>How it`s made?</li>
-          <li>Our products</li>
-          <li>Top sellers</li>
-          <li>Chocolate is loved</li>
-        </ul>
-      </nav>
+    <header class="header-class">
+      <div class="container">
+        <div class="header-inner">
+          <nav class="nav-lists">
+            <div class="nav-head-icon">
+              <a class="header-logo" href="./index.html">
+                <span class="header-accent">Simply</span> Chocolate
+              </a>
+              <svg width="24" height="24">
+                <use
+                  href="./icon.svg/symbol-defs.svg#icon-chocolate-head"
+                ></use>
+              </svg>
+            </div>
+            <ul class="nav-ul-list">
+              <li>
+                <a class="nav-li-item" href="">Home</a>
+              </li>
+              <li><a class="nav-li-item" href="#">How it`s made?</a></li>
+              <li><a class="nav-li-item" href="#">Our products</a></li>
+              <li><a class="nav-li-item" href="#">Top sellers</a></li>
+              <li><a class="nav-li-item" href="#">Chocolate is loved</a></li>
+            </ul>
+          </nav>
+          <div class="header-div-icon">
+            <a class="header-icon" href="#">
+              <svg width="24" height="24">
+                <use href="./icon.svg/symbol-defs.svg#icon-instagram"></use>
+              </svg>
+            </a>
+            <a class="header-icon" href="#">
+              <svg width="24" height="24">
+                <use href="./icon.svg/symbol-defs.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </header>
-    <main></main>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-image">
+            <h2 class="hero-head">
+              Treat yourself or a loved one to our finest ingredients for a
+              moment of pure delight!
+            </h2>
+            <div class="button-hero-section">
+              <div class="button-primary-second">
+                <button class="primary-button" type="button">Buy now</button>
+                <a class="secondary-button" href="#">How it`s made</a>
+              </div>
+
+              <a class="button-scroll" href=""
+                >scroll down
+                <div class="div-button-arrow">
+                  <svg class="button-arrow" width="22" height="22">
+                    <use href="./icon.svg/symbol-defs.svg#icon-vector"></use>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section advantage-section">
+        <div class="container">
+          <h2 class="visually-hidden">Our advantage</h2>
+          <ul class="advantage-list">
+            <li class="advantage-item">
+              <div class="advantage-icon-div">
+                <svg width="28" height="28">
+                  <use href="./icon.svg/symbol-defs.svg#icon-chocolate"></use>
+                </svg>
+              </div>
+              <h3 class="advantage-head">Unsurpassed taste</h3>
+              <p class="advantage-text">
+                Crafted with the finest quality cocoa beans and a dedication to
+                perfection, each bite is a decadent experience that simply
+                cannot be matched. Savor the richness and complexity of our
+                Unsurpassed Taste and discover a new level of chocolate bliss.
+              </p>
+            </li>
+            <li class="advantage-item">
+              <div class="advantage-icon-div">
+                <svg width="28" height="28">
+                  <use href="./icon.svg/symbol-defs.svg#icon-chocolate"></use>
+                </svg>
+              </div>
+              <h3 class="advantage-head">Unsurpassed taste</h3>
+              <p class="advantage-text">
+                Crafted with the finest quality cocoa beans and a dedication to
+                perfection, each bite is a decadent experience that simply
+                cannot be matched. Savor the richness and complexity of our
+                Unsurpassed Taste and discover a new level of chocolate bliss.
+              </p>
+            </li>
+            <li class="advantage-item">
+              <div class="advantage-icon-div">
+                <svg width="28" height="28">
+                  <use href="./icon.svg/symbol-defs.svg#icon-chocolate"></use>
+                </svg>
+              </div>
+              <h3 class="advantage-head">Unsurpassed taste</h3>
+              <p class="advantage-text">
+                Crafted with the finest quality cocoa beans and a dedication to
+                perfection, each bite is a decadent experience that simply
+                cannot be matched. Savor the richness and complexity of our
+                Unsurpassed Taste and discover a new level of chocolate bliss.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="head-all-section">
+            It all adds up to one exeptional
+            <span class="accent-all-section">taste</span> sensation
+          </h2>
+          <p class="taste-text">
+            At Simply Chocolate, we believe that the secret to exceptional
+            chocolate is in the details. From the sourcing of the finest
+            ingredients to the careful crafting of each individual piece, every
+            step of our process adds up to one exceptional taste sensation.
+          </p>
+          <ul class="taste-list">
+            <li class="taste-item">
+              <div class="taste-item-div">
+                <img
+                  class="taste-item-foto"
+                  src="./foto/chocolate.webp"
+                  alt="foto-chohcolate"
+                />
+                <h3 class="head-card">Milk-chocolate</h3>
+              </div>
+            </li>
+            <li class="taste-item">
+              <div class="taste-item-div-milk-semi">
+                <img
+                  class="taste-item-foto"
+                  src="./foto/milk.webp"
+                  alt="Milk"
+                />
+                <h3 class="head-card-milk-semi">Milk</h3>
+              </div>
+            </li>
+            <li class="taste-item">
+              <div class="taste-item-div taste-nuts-div">
+                <img
+                  class="taste-item-foto"
+                  src="./foto/nuts.webp"
+                  alt="nuts-chohcolate"
+                />
+                <h3 class="head-card">nuts</h3>
+              </div>
+            </li>
+            <li class="taste-item">
+              <div class="taste-item-div-milk-semi">
+                <img
+                  class="taste-item-foto"
+                  src="./foto/semi.webp"
+                  alt="semi-chohcolate"
+                />
+                <h3 class="head-card-milk-semi">Semi-sweet-chocolate</h3>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="head-all-section">
+            How it`s <span class="accent-all-section">made?</span>
+          </h2>
+          <div class="work-section-all-div">
+            <div class="work-section-foto-div">
+              <img
+                class="work-section-foto"
+                src="./foto/work_chocolate.webp"
+                alt="work-chocolate"
+              />
+              <svg class="work-section-icon" width="44" height="44">
+                <use href="./icon.svg/symbol-defs2.svg#icon-Vector-1"></use>
+              </svg>
+            </div>
+            <div class="work-section-text-div">
+              <h3 class="work-section-head">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ul class="work-section-list">
+                <li class="work-section-item">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </li>
+                <li class="work-section-item">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </li>
+                <li class="work-section-item">
+                  "Mix" the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.
+                </li>
+                <li class="work-section-item">
+                  Heat the mixture over low heat, letting it barely boil.
+                </li>
+                <li class="work-section-item">
+                  Pour the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="head-all-section">
+            our <span class="accent-all-section">products</span>
+          </h2>
+          <ul class="products-list">
+            <li class="products-item">
+              <div class="products-item-div">
+                <img
+                  class="products-item-img"
+                  src="./foto/chocolate1.webp"
+                  alt=""
+                />
+                <div class="products-overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quia mollitia magni nemo, ex rem fugiat asperiores facere
+                    corporis. Fuga laboriosam consequuntur temporibus, dolore
+                    nisi commodi id expedita necessitatibus perferendis sed?
+                  </p>
+                </div>
+              </div>
+              <h3 class="products-item-head">orange</h3>
+              <p class="products-item-text">Dark chocolate</p>
+              <h4 class="products-item-price">45 UAH</h4>
+            </li>
+            <li class="products-item">
+              <div class="products-item-div">
+                <img
+                  class="products-item-img"
+                  src="./foto/chocolate2.webp"
+                  alt=""
+                />
+                <div class="products-overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quia mollitia magni nemo, ex rem fugiat asperiores facere
+                    corporis. Fuga laboriosam consequuntur temporibus, dolore
+                    nisi commodi id expedita necessitatibus perferendis sed?
+                  </p>
+                </div>
+              </div>
+              <h3 class="products-item-head">Apple&Cranberry</h3>
+              <p class="products-item-text">Milk chocolate</p>
+              <h4 class="products-item-price">50 UAH</h4>
+            </li>
+            <li class="products-item">
+              <div class="products-item-div">
+                <img
+                  class="products-item-img"
+                  src="./foto/chocolate2.webp"
+                  alt=""
+                />
+                <div class="products-overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quia mollitia magni nemo, ex rem fugiat asperiores facere
+                    corporis. Fuga laboriosam consequuntur temporibus, dolore
+                    nisi commodi id expedita necessitatibus perferendis sed?
+                  </p>
+                </div>
+              </div>
+              <h3 class="products-item-head">lime&sea salt</h3>
+              <p class="products-item-text">Dark chocolate</p>
+              <h4 class="products-item-price">66 UAH</h4>
+            </li>
+            <li class="products-item">
+              <div class="products-item-div">
+                <img
+                  class="products-item-img"
+                  src="./foto/chocolate4.webp"
+                  alt=""
+                />
+                <div class="products-overlay">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quia mollitia magni nemo, ex rem fugiat asperiores facere
+                    corporis. Fuga laboriosam consequuntur temporibus, dolore
+                    nisi commodi id expedita necessitatibus perferendis sed?
+                  </p>
+                </div>
+              </div>
+              <h3 class="products-item-head">pineapple</h3>
+              <p class="products-item-text">Dark chocolate</p>
+              <h4 class="products-item-price">54 UAH</h4>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <svg class="products-icon" width="28" height="13">
+                <use href="./icon.svg/symbol-defs3.svg#icon-Rectangle-5"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
