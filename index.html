@@ -11,9 +11,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header class="header-class">
+    <!-- <header class="header-class">
       <div class="container">
         <div class="header-inner">
           <nav class="nav-lists">
@@ -51,9 +55,9 @@
           </div>
         </div>
       </div>
-    </header>
+    </header> -->
     <main>
-      <section class="hero-section">
+      <!-- <section class="hero-section">
         <div class="container">
           <div class="hero-image">
             <h2 class="hero-head">
@@ -62,7 +66,9 @@
             </h2>
             <div class="button-hero-section">
               <div class="button-primary-second">
-                <button class="primary-button" type="button">Buy now</button>
+                <button class="primary-button" type="button" data-modal-open>
+                  Buy now
+                </button>
                 <a class="secondary-button" href="#">How it`s made</a>
               </div>
 
@@ -77,7 +83,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       <section class="section advantage-section">
         <div class="container">
           <h2 class="visually-hidden">Our advantage</h2>
@@ -316,15 +322,265 @@
               <h4 class="products-item-price">54 UAH</h4>
             </li>
           </ul>
-          <ul>
+          <ul class="products-icon-list">
             <li>
               <svg class="products-icon" width="28" height="13">
                 <use href="./icon.svg/symbol-defs3.svg#icon-Rectangle-5"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="products-icon-secondary" width="13" height="13">
+                <use href="./icon.svg/symbol-defs3.svg#icon-Vector-1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="products-icon-secondary" width="13" height="13">
+                <use href="./icon.svg/symbol-defs3.svg#icon-Vector-1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="products-icon-secondary" width="13" height="13">
+                <use href="./icon.svg/symbol-defs3.svg#icon-Vector-1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="products-icon-secondary" width="13" height="13">
+                <use href="./icon.svg/symbol-defs3.svg#icon-Vector-1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="products-icon-secondary" width="13" height="13">
+                <use href="./icon.svg/symbol-defs3.svg#icon-Vector-1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="products-icon-secondary" width="13" height="13">
+                <use href="./icon.svg/symbol-defs3.svg#icon-Vector-1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="products-icon-secondary" width="13" height="13">
+                <use href="./icon.svg/symbol-defs3.svg#icon-Vector-1"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="head-all-section comment-section">
+            <span class="accent-all-section">Chocolate</span>
+            is loved
+          </h2>
+          <ul class="comment-list">
+            <li class="comment-item">
+              <img class="comment-img" src="./foto/Ellipse.webp" alt="" />
+              <h3 class="comment-head">Victoria Dobrzhanska</h3>
+              <p class="comment-text">
+                I love this chocolate bar. Perfect combination of light crispy
+                wafer, covered in a thin layer chocolate.
+              </p>
+            </li>
+            <li class="comment-item">
+              <img class="comment-img" src="./foto/Nazar.webp" alt="" />
+              <h3 class="comment-head">Nazar Babenko</h3>
+              <p class="comment-text">
+                This chocolate confection is a delight! A delight! The wafer is
+                light and crisp, the hazelnut cream is smooth, and the chocolate
+                is good.
+              </p>
+            </li>
+            <li class="comment-item">
+              <img class="comment-img" src="./foto/Olena.webp" alt="" />
+              <h3 class="comment-head">Olena Kampusch</h3>
+              <p class="comment-text">
+                Chocolate is a family favourite treat. Love the delicious smooth
+                chocolate and the creaminess inside. The wafer is soft but
+                crunchy.
+              </p>
+            </li>
+          </ul>
+          <ul class="products-icon-list">
+            <li>
+              <svg class="products-icon" width="28" height="13">
+                <use href="./icon.svg/symbol-defs3.svg#icon-Rectangle-5"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="products-icon-secondary" width="13" height="13">
+                <use href="./icon.svg/symbol-defs3.svg#icon-Vector-1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="products-icon-secondary" width="13" height="13">
+                <use href="./icon.svg/symbol-defs3.svg#icon-Vector-1"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="products-icon-secondary" width="13" height="13">
+                <use href="./icon.svg/symbol-defs3.svg#icon-Vector-1"></use>
               </svg>
             </li>
           </ul>
         </div>
       </section>
     </main>
+    <footer></footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" type="button" data-modal-close>X</button>
+        <h2 class="head-all-section">
+          <span class="accent-all-section">Buy</span>
+          now
+        </h2>
+        <form name="contact-form">
+          <fieldset>
+            <legend class="modal-label">Personal-information</legend>
+            <div class="modal-field">
+              <label class="visually-hidden" for="user-name">Name</label>
+              <input
+                class="modal-input"
+                id="user-name"
+                type="text"
+                name="Name"
+                placeholder="Name"
+              />
+            </div>
+
+            <div class="modal-field">
+              <label class="visually-hidden" for="user-surname">Surname</label>
+              <input
+                class="modal-input"
+                id="user-surname"
+                type="text"
+                name="Surname"
+                placeholder="Surname"
+              />
+            </div>
+
+            <div class="modal-field">
+              <label class="modal-label" for="user-email">Email</label>
+              <input
+                class="modal-input"
+                id="user-email"
+                type="email"
+                name="user-email"
+                placeholder="Email"
+              />
+            </div>
+
+            <div class="modal-field">
+              <label class="modal-label" for="user-tel">Phone number</label>
+              <div class="modal-input-wrap">
+                <svg class="modal-icon" width="32" height="32">
+                  <use href="./icon.svg/symbol-defs4.svg#icon-Frame"></use>
+                </svg>
+                <input
+                  class="modal-input modal-input-phone"
+                  id="user-tel"
+                  type="tel"
+                  name="user-tel"
+                  placeholder="Phone number"
+                />
+              </div>
+            </div>
+
+            <div class="modal-field">
+              <label class="modal-label" for="user-card-number"
+                >Card number</label
+              >
+              <input
+                class="modal-input"
+                id="user-card-number"
+                type="tel"
+                name="user-card-number"
+                placeholder="Card number"
+              />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="visually-hidden">Additional information</legend>
+            <div>
+              <label class="modal-label" for="user-comment">Comment</label>
+              <textarea
+                class="modal-textarea"
+                name="user-comment"
+                id="user-comment"
+                placeholder="Enter text"
+              ></textarea>
+            </div>
+          </fieldset>
+          <button class="primary-button modal-button" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
+  <script src="./close.js"></script>
 </html>
+<!-- <button class="modal-close" data-modal-close>X</button> -->
+<form class="form" action="">
+  <fieldset>
+    <!-- <legend class="modal-head">Personal information</legend> -->
+    <!-- <div class="modal-personal-div">
+      <label class="visually-hidden" for="data-name"></label>
+      <input
+        class="modal-input-personal"
+        id="data-name"
+        type="text"
+        placeholder="Name"
+        name="Name"
+      />
+      <label class="visually-hidden" for="data-surname"></label>
+      <input
+        class="modal-input-personal"
+        id="data-surname"
+        type="text"
+        placeholder="Surname"
+        name="Surname"
+      />
+    </div> -->
+    <!-- <div class="modal-all-div">
+      <label class="modal-label" for="data-email">Email</label>
+      <input
+        class="modal-input"
+        id="data-email"
+        type="email"
+        placeholder="Email"
+        name="Email"
+      />
+    </div> -->
+    <!-- <div>
+    <label class="modal-label" for="data-tel">Phone number</label>
+    <input
+      class="modal-input"
+      id="data-tel"
+      type="tel"
+      placeholder="Phone number"
+      name="Phone number"
+    />
+  </div> -->
+    <!-- <div>
+    <label class="modal-label" for="data-card">Card number</label>
+    <input
+      class="modal-input"
+      id="data-card"
+      type="tel"
+      placeholder="Card number"
+      name="Card number"
+    />
+  </div> -->
+  </fieldset>
+  <!-- <div>
+    <label class="modal-label" for="data-text">Comment</label>
+    <textarea
+      class="modal-input"
+      name="Comment"
+      id="data-text"
+      type="text"
+      placeholder="Enter text"
+    ></textarea>
+  </div> -->
+  <!-- <button class="primary-button" type="submit">Submit</button> -->
+</form>
