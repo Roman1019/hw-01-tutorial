@@ -119,6 +119,12 @@ textarea {
   justify-content: center;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .nav-ul-list {
+    display: none;
+  }
+}
+
 .nav-li-item {
   display: inline-block;
   font-family: Montserrat;
@@ -138,6 +144,12 @@ textarea {
   gap: 18px;
 }
 
+@media screen and (max-width: 1199.98px) {
+  .header-div-icon {
+    display: none;
+  }
+}
+
 .header-icon {
   stroke: var(--black-color);
   fill: var(--white-color);
@@ -148,6 +160,23 @@ textarea {
   stroke: var(--brand-color);
 }
 
+.header-icon-mobile {
+  border: none;
+  background-color: var(--body-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  stroke: var(--black-color);
+  fill: var(--white-color);
+  transition: stroke 0.2s;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-icon-mobile {
+    display: none;
+  }
+}
 /* Hero-section */
 .hero-section {
   padding-bottom: 72px;
@@ -163,6 +192,48 @@ textarea {
   background-size: cover;
 }
 
+@media screen and (max-width: 767.98px) {
+  .hero-image {
+    background-image: url(./foto/chocolate-covered-cocoa-powder\ 1mob.jpg);
+    max-width: 335px;
+    max-height: 620px;
+    padding: 395px 20px 20px 20px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767.98px) {
+  .hero-image {
+    background-image: url(./foto/chocolate-covered-cocoa-powder\ 1mob@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .hero-image {
+    background-image: url(./foto/chocolate-covered-cocoa-powder\ 1tab.jpg);
+    max-width: 704px;
+    max-height: 890px;
+    padding: 671px 40px 40px 40px;
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199.98px) {
+  .hero-image {
+    background-image: url(./foto/chocolate-covered-cocoa-powder\ 1tab@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-image {
+    background-image: url(./foto/chocolate-covered-cocoa-powder\ 1desk.jpg);
+  }
+}
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+  .hero-image {
+    background-image: url(./foto/chocolate-covered-cocoa-powder\ 1desk@2x.jpg);
+  }
+}
+
 .hero-head {
   color: var(--white-color);
   max-width: 484px;
@@ -173,9 +244,22 @@ textarea {
   text-align: left;
   margin-bottom: 32px;
 }
+@media screen and (max-width: 767.98px) {
+  .hero-head {
+    max-width: 295px;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+}
 
 .button-hero-section {
   display: flex;
+}
+@media screen and (max-width: 767.98px) {
+  .button-hero-section {
+    flex-direction: column;
+    gap: 32px;
+  }
 }
 
 .button-primary-second {
@@ -192,9 +276,16 @@ textarea {
   background-color: var(--brand-color);
   border-radius: 100px;
   border: 1px solid;
-
   padding: 14px 40px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 767.98px) {
+  .primary-button {
+    padding: 12px 26px;
+    max-width: 120px;
+    max-height: 41px;
+  }
 }
 
 .primary-button:hover {
@@ -208,22 +299,33 @@ textarea {
   line-height: 1.21;
   color: var(--white-color);
   border-radius: 100px;
-
   padding: 14px 40px;
   border: 1px solid var(--white-color);
   text-decoration: none;
+}
+
+@media screen and (max-width: 767.98px) {
+  .secondary-button {
+    padding: 12px 23px;
+    max-width: 159px;
+    max-height: 41px;
+  }
 }
 
 .button-scroll {
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-left: auto;
   font-weight: 500;
   line-height: 1.28;
   letter-spacing: -0.03em;
   color: var(--white-color);
   text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .button-scroll {
+    margin-left: auto;
+  }
 }
 
 .button-scroll:hover {
@@ -239,6 +341,19 @@ textarea {
   background-color: var(--white-color);
   width: 38px;
   height: 38px;
+}
+@media screen and (max-width: 767.98px) {
+  .div-button-arrow {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .button-arrow {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .button-scroll:hover .div-button-arrow {
@@ -418,6 +533,15 @@ textarea {
 @media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .taste-item {
     flex-basis: calc((100% - 32px) / 2);
+    max-width: 336px;
+    max-height: 270px;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .taste-item {
+    max-width: 336px;
+    max-height: 270px;
   }
 }
 
@@ -426,6 +550,20 @@ textarea {
   border-radius: 15px;
   padding: 28px;
   padding-right: 36px;
+}
+
+@media screen and (min-width: 1200px) {
+  .taste-item-div {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 1199.9px) {
+  .taste-item-div {
+    max-width: 336px;
+    max-height: 270px;
+  }
 }
 
 .taste-nuts-div {
@@ -440,8 +578,36 @@ textarea {
   padding-right: 36px;
 }
 
+@media screen and (min-width: 1200px) {
+  .taste-item-div-milk-semi {
+    width: 270px;
+    height: 270px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .taste-item-div-milk-semi {
+    max-width: 336px;
+    max-height: 270px;
+  }
+}
+
 .taste-item-foto {
+  margin: 0 auto;
   margin-bottom: 36px;
+}
+
+@media screen and (max-width: 1199.98px) {
+  .taste-item-foto {
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .taste-item-foto {
+    width: 206px;
+    height: 160px;
+  }
 }
 
 .head-card {
@@ -498,7 +664,7 @@ textarea {
   max-height: 400px;
 }
 
-@media screen and (max-width: 767.9px) {
+@media screen and (max-width: 767.98px) {
   .work-section-foto {
     max-width: 100%;
     max-height: 100%;
@@ -508,7 +674,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .work-section-foto {
     max-width: 100%;
     max-height: 100%;
@@ -516,9 +682,31 @@ textarea {
     max-height: 400px;
   }
 }
-.work-section-icon {
+.work-section-icon-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--color-play);
+  border-radius: 50%;
   position: absolute;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 44px;
+  height: 44px;
+  fill: var(--color-play);
+}
+@media screen and (max-width: 767.98px) {
+  .work-section-icon-div {
+    width: 35px;
+    height: 35px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  .work-section-icon {
+    width: 14px;
+    height: 15px;
+  }
 }
 
 .work-section-text-div {
@@ -624,17 +812,29 @@ textarea {
 .products-item {
   /* flex-basis: calc((100% - 54px) / 4); */
   flex-basis: 100%;
-  max-width: 270px;
-  max-height: 364px;
   padding: 32px 20px;
   background-color: var(--white-color);
   border: 1px solid var(--border-color);
   border-radius: 15px;
 }
+@media screen and (min-width: 1200px) {
+  .products-item {
+    max-width: 270px;
+    height: 364px;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .products-item {
     flex-basis: calc((100% - 18px) / 2);
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .products-item {
+    padding: 32px 52px 32px 53px;
+    width: 335px;
+    height: 364px;
   }
 }
 .products-item:hover .products-overlay {
@@ -735,6 +935,7 @@ textarea {
     flex-wrap: wrap;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199.9px) {
   .comment-list {
     justify-content: center;
@@ -791,7 +992,112 @@ textarea {
   color: var(--products-text-color);
   margin: 0 auto;
 }
+.comment-icon-list {
+  margin-bottom: 50px;
+}
 
+.comment-button {
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.21;
+  color: var(--black-color);
+  background-color: var(--body-color);
+  border-radius: 100px;
+  padding: 14px 40px;
+  border: 1px solid var(--brand-color);
+  width: 222px;
+  height: 50px;
+}
+
+@media screen and (max-width: 767.9px) {
+  .comment-button {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.21;
+    text-align: center;
+    padding: 12px 26px;
+    width: 165px;
+    height: 41px;
+  }
+}
+/* Subscribe-section */
+.subscribe-section {
+  background-color: var(--bg-color);
+  background-image: url(./foto/Subcribedesk.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* @media screen and (max-width: 767.98px) {
+  .hero-image {
+    background-image: url(./foto/chocolate-covered-cocoa-powder\ 1mob.jpg);
+    max-width: 335px;
+    max-height: 620px;
+    padding: 395px 20px 20px 20px;
+  }
+} */
+
+/* @media screen and (min-resolution: 192dpi) and (max-width: 767.98px) {
+  .hero-image {
+    background-image: url(./foto/chocolate-covered-cocoa-powder\ 1mob@2x.jpg);
+  }
+} */
+/* 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .hero-image {
+    background-image: url(./foto/chocolate-covered-cocoa-powder\ 1tab.jpg);
+    max-width: 704px;
+    max-height: 890px;
+    padding: 671px 40px 40px 40px;
+  }
+} */
+
+/* @media screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1199.98px) {
+  .hero-image {
+    background-image: url(./foto/chocolate-covered-cocoa-powder\ 1tab@2x.jpg);
+  }
+} */
+
+/* @media screen and (min-width: 1200px) {
+  .hero-image {
+    background-image: url(./foto/chocolate-covered-cocoa-powder\ 1desk.jpg);
+  }
+} */
+
+@media screen and (min-resolution: 192dpi) and (min-width: 1200px) {
+  .subscribe-section {
+    background-image: url(./foto/Subcribedesk@2x.jpg);
+  }
+}
+.subscribe-head {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-align: center;
+  max-width: 378px;
+  color: var(--white-color);
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.subscribe-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--white-color);
+  max-width: 467px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+
+.subscribe-button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
 /* Modal */
 .backdrop {
   position: fixed;

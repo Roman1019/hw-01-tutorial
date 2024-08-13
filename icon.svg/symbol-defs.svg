@@ -37,5 +37,8 @@
 <path fill="#f9a000" style="fill: var(--color5, #f9a000)" d="M23.467 23.29c2.099-1.801 3.429-4.48 3.429-7.472s-1.331-5.672-3.429-7.472c1.704-1.462 3.915-2.345 6.331-2.345 5.391 0 9.76 4.395 9.76 9.818s-4.37 9.818-9.76 9.818c-2.416 0-4.627-0.883-6.331-2.345z"></path>
 <path fill="#ff5e00" style="fill: var(--color6, #ff5e00)" d="M23.467 23.29c2.099-1.801 3.429-4.48 3.429-7.472s-1.331-5.672-3.429-7.472c-2.099 1.801-3.429 4.48-3.429 7.472s1.331 5.672 3.429 7.472z"></path>
 </symbol>
+<symbol id="icon-icon" viewBox="0 0 45 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M3.2 16h38.4M3.2 3.2h38.4M3.2 28.8h38.4"></path>
+</symbol>
 </defs>
 </svg>

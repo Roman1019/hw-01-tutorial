@@ -17,7 +17,7 @@
     />
   </head>
   <body>
-    <!-- <header class="header-class">
+    <header class="header-class">
       <div class="container">
         <div class="header-inner">
           <nav class="nav-lists">
@@ -53,11 +53,16 @@
               </svg>
             </a>
           </div>
+          <button class="header-icon-mobile">
+            <svg width="24" height="24">
+              <use href="./icon.svg/symbol-defs.svg#icon-icon"></use>
+            </svg>
+          </button>
         </div>
       </div>
-    </header> -->
+    </header>
     <main>
-      <!-- <section class="hero-section">
+      <section class="hero-section">
         <div class="container">
           <div class="hero-image">
             <h2 class="hero-head">
@@ -83,7 +88,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="section advantage-section">
         <div class="container">
           <h2 class="visually-hidden">Our advantage</h2>
@@ -148,41 +153,93 @@
           <ul class="taste-list">
             <li class="taste-item">
               <div class="taste-item-div">
-                <img
-                  class="taste-item-foto"
-                  src="./foto/chocolate.webp"
-                  alt="foto-chohcolate"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./foto/chocolatedesk.png    1x,
+                      ./foto/chocolatedesk@2x.png 2x
+                    " />
+                  <source
+                    media="(max-width: 1199.98px)"
+                    srcset="
+                      ./foto/chocolatemob.png    1x,
+                      ./foto/chocolatemob@2x.png 2x
+                    " />
+                  <img
+                    class="taste-item-foto"
+                    src="./foto/chocolate.webp"
+                    alt="foto-chohcolate"
+                    width="224px"
+                    height="171px"
+                /></picture>
+
                 <h3 class="head-card">Milk-chocolate</h3>
               </div>
             </li>
             <li class="taste-item">
               <div class="taste-item-div-milk-semi">
-                <img
-                  class="taste-item-foto"
-                  src="./foto/milk.webp"
-                  alt="Milk"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./foto/milkdesk.png    1x,
+                      ./foto/milkdesk@2x.png 2x
+                    " />
+                  <source
+                    media="(max-width: 1199.98px)"
+                    srcset="./foto/milkmob.png 1x, ./foto/milkmob@2x.png 2x" />
+                  <img
+                    class="taste-item-foto"
+                    src="./foto/milk.webp"
+                    alt="Milk"
+                    width="224px"
+                    height="171px"
+                /></picture>
                 <h3 class="head-card-milk-semi">Milk</h3>
               </div>
             </li>
             <li class="taste-item">
               <div class="taste-item-div taste-nuts-div">
-                <img
-                  class="taste-item-foto"
-                  src="./foto/nuts.webp"
-                  alt="nuts-chohcolate"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./foto/nutsdesk.png    1x,
+                      ./foto/nutsdesk@2x.png 2x
+                    " />
+                  <source
+                    media="(max-width: 1199.98px)"
+                    srcset="./foto/nutsmob.png 1x, ./foto/nutsmob@2x.png 2x" />
+                  <img
+                    class="taste-item-foto"
+                    src="./foto/nuts.webp"
+                    alt="nuts-chohcolate"
+                    width="224px"
+                    height="171px"
+                /></picture>
                 <h3 class="head-card">nuts</h3>
               </div>
             </li>
             <li class="taste-item">
               <div class="taste-item-div-milk-semi">
-                <img
-                  class="taste-item-foto"
-                  src="./foto/semi.webp"
-                  alt="semi-chohcolate"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./foto/semidesk.png    1x,
+                      ./foto/semidesk@2x.png 2x
+                    " />
+                  <source
+                    media="(max-width: 1199.98px)"
+                    srcset="./foto/semimob.png 1x, ./foto/semimob@2x.png 2x" />
+                  <img
+                    class="taste-item-foto"
+                    src="./foto/semi.webp"
+                    alt="semi-chohcolate"
+                    width="224px"
+                    height="171px"
+                /></picture>
                 <h3 class="head-card-milk-semi">Semi-sweet-chocolate</h3>
               </div>
             </li>
@@ -196,14 +253,29 @@
           </h2>
           <div class="work-section-all-div">
             <div class="work-section-foto-div">
-              <img
-                class="work-section-foto"
-                src="./foto/work_chocolate.webp"
-                alt="work-chocolate"
-              />
-              <svg class="work-section-icon" width="44" height="44">
-                <use href="./icon.svg/symbol-defs2.svg#icon-Vector-1"></use>
-              </svg>
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./foto/imagedesk.jpg    1x,
+                    ./foto/imagedesk@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./foto/imagetab.jpg 1x, ./foto/imagetab@2x.jpg 2x" />
+                <source
+                  media="(max-width: 767.98px)"
+                  srcset="./foto/imagemob.jpg 1x, ./foto/imagemob@2x.jpg 2x" />
+                <img
+                  class="work-section-foto"
+                  src="./foto/work_chocolate.webp"
+                  alt="work-chocolate"
+              /></picture>
+              <div class="work-section-icon-div">
+                <svg class="work-section-icon" width="20" height="21">
+                  <use href="./icon.svg/symbol-defs2.svg#icon-Vector-1"></use>
+                </svg>
+              </div>
             </div>
             <div class="work-section-text-div">
               <h3 class="work-section-head">
@@ -245,6 +317,7 @@
               <div class="products-item-div">
                 <img
                   class="products-item-img"
+                  srcset="./foto/image1.jpg 1x, ./foto/image1@2x.jpg 2x"
                   src="./foto/chocolate1.webp"
                   alt=""
                 />
@@ -265,6 +338,7 @@
               <div class="products-item-div">
                 <img
                   class="products-item-img"
+                  srcset="./foto/image2.jpg 1x, ./foto/image2@2x.jpg 2x"
                   src="./foto/chocolate2.webp"
                   alt=""
                 />
@@ -285,6 +359,7 @@
               <div class="products-item-div">
                 <img
                   class="products-item-img"
+                  srcset="./foto/image3.jpg 1x, ./foto/image3@2x.jpg 2x"
                   src="./foto/chocolate2.webp"
                   alt=""
                 />
@@ -305,6 +380,7 @@
               <div class="products-item-div">
                 <img
                   class="products-item-img"
+                  srcset="./foto/image4.jpg 1x, ./foto/image4@2x.jpg 2x"
                   src="./foto/chocolate4.webp"
                   alt=""
                 />
@@ -400,7 +476,7 @@
               </p>
             </li>
           </ul>
-          <ul class="products-icon-list">
+          <ul class="products-icon-list comment-icon-list">
             <li>
               <svg class="products-icon" width="28" height="13">
                 <use href="./icon.svg/symbol-defs3.svg#icon-Rectangle-5"></use>
@@ -422,6 +498,19 @@
               </svg>
             </li>
           </ul>
+          <button class="comment-button" type="button">Leave a review</button>
+        </div>
+      </section>
+      <section class="section subscribe-section">
+        <div class="container">
+          <h2 class="subscribe-head">Explore our new chocolate first</h2>
+          <p class="subscribe-text">
+            From the velvety texture to the rich and complex flavor, our New
+            Chocolate is a true indulgence that will leave you craving more.
+            Made with only the finest ingredients and handcrafted with the
+            utmost care, each piece is a work of art that is sure to please.
+          </p>
+          <button class="primary-button subscribe-button">Subscribe</button>
         </div>
       </section>
     </main>
