@@ -53,7 +53,7 @@
               </svg>
             </a>
           </div>
-          <button class="header-icon-mobile">
+          <button class="header-icon-mobile" data-modal-open>
             <svg width="24" height="24">
               <use href="./icon.svg/symbol-defs.svg#icon-icon"></use>
             </svg>
@@ -471,14 +471,14 @@
                 />
               </picture>
             </li>
-            <!-- <li>
+            <li>
               <p class="sellers-text-accent">
                 Crazy enough chocolate originates from a bean just like the
                 coffee bean called Cacao. Cacao has been around for thousands of
                 years and was first discovered by the Native American tribe
                 called the Mayans.
               </p>
-            </li> -->
+            </li>
             <li class="sellers-item">
               <picture>
                 <source
@@ -654,6 +654,43 @@
         </ul>
       </div>
     </footer>
+    <!-- Mobile menu  -->
+    <div class="backdrop-mobile is-open" data-modal>
+      <div class="mobile-menu">
+        <a>
+          <svg
+            class="icon-mobile-close"
+            data-modal-close
+            width="12"
+            height="12"
+          >
+            <use href="./icon.svg/symbol-defs7.svg#icon-Iconmob"></use>
+          </svg>
+        </a>
+        <ul class="mobile-ul-list">
+          <li>
+            <a class="mobile-li-item" href="">Home</a>
+          </li>
+          <li><a class="mobile-li-item" href="#">How it`s made?</a></li>
+          <li><a class="mobile-li-item" href="#">Our products</a></li>
+          <li><a class="mobile-li-item" href="#">Top sellers</a></li>
+          <li><a class="mobile-li-item" href="#">Chocolate is loved</a></li>
+        </ul>
+        <div class="footer-icon-div mobile-menu-icon">
+          <a class="footer-icon mobile-icon" href="#">
+            <svg width="24" height="24">
+              <use href="./icon.svg/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+          <a class="footer-icon" href="#">
+            <svg width="24" height="24">
+              <use href="./icon.svg/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>X</button>

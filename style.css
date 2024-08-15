@@ -51,6 +51,10 @@ img {
 textarea {
   resize: none;
 }
+picture {
+  margin: 0;
+  padding: 0;
+}
 
 .section {
   padding: 64px 0;
@@ -171,6 +175,10 @@ textarea {
   fill: var(--white-color);
   transition: stroke 0.2s;
   margin-left: auto;
+  cursor: pointer;
+}
+.header-icon-mobile:hover {
+  stroke: var(--brand-color);
 }
 
 @media screen and (min-width: 1200px) {
@@ -938,11 +946,12 @@ textarea {
   }
 }
 .sellers-item {
-  flex-basis: 100%;
+  flex-basis: calc((100% - 32px) / 3);
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .sellers-item {
-    flex-basis: calc((100% - 18px) / 2);
+    flex-basis: calc((100% - 16px) / 2);
   }
 }
 
@@ -1377,6 +1386,100 @@ textarea {
   .footer-li-item {
     padding: 24px 0;
   }
+}
+
+/* Mobile menu */
+@media screen and (min-width: 1200px) {
+  .backdrop-mobile {
+    display: none;
+  }
+  .mobile-menu {
+    display: none;
+  }
+}
+.backdrop-mobile {
+  position: fixed;
+  inset: 0;
+  padding: 20px;
+  display: flex;
+
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
+}
+@media screen and (min-width: 1199.98px) {
+  .is-open {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  inset: 0;
+  margin-left: auto;
+  width: 100%;
+  height: 100%;
+  max-height: 812px;
+  max-width: 230px;
+  background-color: var(--bg-color);
+  padding: 136px 46px 20px 50px;
+  /* overflow-x: hidden;
+  overflow-y: auto; */
+  transform: translateX(0);
+  transition: transform 1s;
+}
+
+.mobile-menu .is-open {
+  transform: translateX(100%);
+}
+
+.icon-mobile-close {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  stroke: var(--white-color);
+  cursor: pointer;
+}
+.icon-mobile-close:hover {
+  stroke: var(--brand-color);
+}
+
+.mobile-ul-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  flex-grow: 1;
+  margin-bottom: 358px;
+}
+
+.mobile-li-item {
+  display: inline-block;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  text-decoration: none;
+  color: var(--white-color);
+  cursor: pointer;
+}
+.mobile-li-item:hover {
+  color: var(--brand-color);
+  text-decoration-line: underline;
+}
+
+.mobile-ul-list {
+  margin-bottom: 440px;
+}
+
+.mobile-menu-icon {
+  position: absolute;
+}
+
+.mobile-icon {
+  width: 22px;
+  height: 22px;
 }
 
 /* Modal */
