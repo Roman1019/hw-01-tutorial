@@ -64,6 +64,16 @@ picture {
   margin: 0 auto;
   padding: 0 32px;
 }
+
+.color-picker-option {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
 @media screen and (max-width: 767.9px) {
   .container {
     max-width: 380px;
@@ -1641,3 +1651,30 @@ picture {
   padding: 22px 24px;
   width: 100%;
 } */
+
+.js-box {
+  width: 64px;
+  height: 64px;
+  border: 1px solid #000000;
+
+  background-color: #000000;
+}
+
+.js-user-name {
+  width: 100%;
+  border: 1.5px solid var(--border-color);
+  border-radius: 13px;
+  background-color: var(--body-color);
+  padding: 22px 24px;
+}
+
+.modal {
+  width: 400px;
+  height: 600px;
+  opacity: 0;
+  background-color: red;
+}
+
+.modal.open {
+  opacity: 1;
+}

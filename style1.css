@@ -561,7 +561,9 @@
     visibility: hidden;
     opacity: 0;
   } */
-
+.color {
+  color: red;
+}
 .modal {
   position: relative;
   max-width: 609px;
